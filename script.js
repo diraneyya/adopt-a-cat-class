@@ -21,3 +21,6 @@ const animalsToAdopt = [
     },
 ];
 
+// Deck container
+const nodeDeck = document.querySelector(".deck");
+
