@@ -24,11 +24,11 @@ const animalsToAdopt = [
 // Deck container
 const nodeDeck = document.querySelector(".deck");
 
-function addCard() {
+function addCard(name, picture) {
     const cardHTML = `
     <div class="card">
-        <h4>Lucky</h4>
-        <img src="https://placekitten.com/200/287" alt="">
+        <h4>${name}</h4>
+        <img src="${picture}" alt="">
     </div>`;
 
     nodeDeck.innerHTML += cardHTML;
