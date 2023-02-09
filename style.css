@@ -1,0 +1,19 @@
+
+.deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 150px;
+    border-radius: 1rem;
+    background-color: antiquewhite;
+    padding: 1rem;
+    margin: 0.125rem;
+}
+
+.card img {
+    max-width: 90%;
+    max-height: 6lh;
+}
