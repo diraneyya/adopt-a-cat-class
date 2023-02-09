@@ -40,3 +40,6 @@ function addSpecificCard(index) {
         animalsToAdopt[index].picture
     );
 }
+
+for (let i = 0; i < animalsToAdopt.length; ++i)
+    addSpecificCard(i);
