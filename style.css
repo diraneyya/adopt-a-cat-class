@@ -7,10 +7,18 @@
 
 .card {
     width: 150px;
-    border-radius: 1rem;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 45);
     padding: 1rem;
-    margin: 0.125rem;
+    margin: 0.25rem;
+    border: 2px solid black;
+    box-shadow:
+    0.5ch 0.5ch 0 0px black;
+    background-color: yellow;
+    opacity: 0.8;
+}
+
+.card:hover {
+    opacity: 1.0;
 }
 
 .card img {
