@@ -33,3 +33,10 @@ function addCard(name, picture) {
 
     nodeDeck.innerHTML += cardHTML;
 }
+
+function addSpecificCard(index) {
+    addCard(
+        animalsToAdopt[index].name, 
+        animalsToAdopt[index].picture
+    );
+}
