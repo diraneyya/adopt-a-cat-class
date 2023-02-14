@@ -25,13 +25,19 @@ const animalsToAdopt = [
 const nodeDeck = document.querySelector(".deck");
 
 function addCard(name, picture) {
-    const cardHTML = `
-    <div class="card">
-        <h4>${name}</h4>
-        <img src="${picture}" alt="">
-    </div>`;
+    const nodeH4 = document.createElement("h4");
+    nodeH4.innerText = name;
+    
+    const nodeImg = document.createElement("img");
+    nodeImg.src = picture;
 
-    nodeDeck.innerHTML += cardHTML;
+    const nodeContainer = document.createElement("div");
+    nodeContainer.className = "card";
+
+    nodeContainer.appendChild(nodeH4);
+    nodeContainer.appendChild(nodeImg);
+
+    nodeDeck.appendChild(nodeContainer);
 }
 
 function addSpecificCard(index) {
